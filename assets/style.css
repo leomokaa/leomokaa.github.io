@@ -151,6 +151,9 @@ header {
 .areas-criativas .tag:nth-child(2) { background: #e5f0ff; }
 .areas-criativas .tag:nth-child(3) { background: #e5ffe5; }
 .areas-criativas .tag:nth-child(4) { background: #fff0e5; }
+.areas-criativas .tag:nth-child(5) { background: #ffe5fc; }
+.areas-criativas .tag:nth-child(6) { background: #cccae6; }
+.areas-criativas .tag:nth-child(7) { background: #caf7f4; }
 
 .mencao-honrosa .conteudo{
   text-align: center;
