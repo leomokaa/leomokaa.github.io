@@ -1,0 +1,398 @@
+:root {
+  --cor-primaria: #4169e1;
+  --cor-texto: #1a1a1a;
+  --cor-borda: #000;
+  --fundo-claro: #f8f8f8;
+  --fundo-hover: #e0e0e0;
+  --cor-sombra: #ccc;
+  --raio-borda: 4px;
+  --espaco-base: 1.5rem;
+  --mono: 'share tech mono', monospace;
+  --roboto: 'roboto', sans-serif;
+}
+
+html, body, div, span, h1, h2, h3, p, a, img, nav, section, footer, button, main, article, blockquote, cite {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  color: var(--cor-texto);
+  font-family: var(--mono);
+  line-height: 1.6;
+  /* CORRIGIDO: Centraliza o container no desktop */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border: 3px solid var(--cor-borda);
+  padding: 2rem;
+  box-shadow: 8px 8px 0px var(--cor-sombra);
+  border-radius: var(--raio-borda);
+}
+
+a {
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-primaria);
+}
+
+header {
+  /* CORRIGIDO: Mudado de static para relative para posicionar o menu corretamente */
+  position: relative;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--cor-borda);
+  padding: var(--espaco-base);
+  margin-bottom: 2rem;
+  z-index: 100;
+  border-radius: 6px;
+}
+
+.caixa-titulo h1 {
+  font-size: 2rem;
+  color: var(--cor-borda);
+}
+
+.titulo-azul {
+  color: var(--cor-primaria);
+}
+
+.subtitulo {
+  color: #444;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.autor-citacao {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+
+.menu-navegacao {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-navegacao a {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  font-size: 1rem;
+  background: var(--fundo-claro);
+}
+
+.menu-navegacao a.ativo {
+  background: var(--cor-primaria);
+  color: #fff;
+  border-color: var(--cor-primaria);
+}
+
+.botao-menu {
+  display: none;
+  background: var(--fundo-claro);
+  border: 2px solid var(--cor-borda);
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: var(--raio-borda);
+}
+
+.bloco {
+  border: 2px solid var(--cor-borda);
+  padding: var(--espaco-base);
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.bloco h2 {
+  font-size: 1.4rem;
+  color: var(--cor-borda);
+  margin-bottom: 1rem;
+  border-bottom: 2px dashed var(--cor-borda);
+  padding-bottom: 0.5rem;
+  font-family: var(--roboto);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  background: #e8e8e8;
+  padding: 0.4rem 1rem;
+  border: 1px solid #aaa;
+  border-radius: var(--raio-borda);
+  font-size: 0.9rem;
+}
+
+.areas-criativas .tag:nth-child(1) { background: #ffe5e5; }
+.areas-criativas .tag:nth-child(2) { background: #e5f0ff; }
+.areas-criativas .tag:nth-child(3) { background: #e5ffe5; }
+.areas-criativas .tag:nth-child(4) { background: #fff0e5; }
+
+.mencao-honrosa .conteudo{
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto; 
+  padding: 0 1rem;
+}
+
+.mencao-honrosa img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 3rem;
+}
+
+.posts-blog {
+  margin-bottom: 2rem;
+}
+
+.posts-blog h2 {
+  font-size: 1.4rem;
+  color: var(--cor-borda);
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed var(--cor-borda);
+  padding-bottom: 0.2rem;
+  font-family: var(--roboto);
+}
+
+.container-posts {
+  margin-bottom: 2rem;
+}
+
+.cartao-post {
+  display: flex;
+  border: 2px solid var(--cor-borda);
+  background: var(--fundo-claro);
+  padding: 1rem;
+  border-radius: var(--raio-borda);
+  margin-bottom: 1rem;
+}
+
+.imagem-post {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  object-fit: contain;
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  margin-right: 1rem;
+}
+
+.numero-post {
+  background: var(--cor-borda);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: var(--raio-borda);
+}
+
+.conteudo-post {
+  flex: 1;
+}
+
+.conteudo-post h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.data-post {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.leia-mais {
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  color: var(--cor-texto);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.leia-mais:hover {
+  color: var(--cor-primaria);
+}
+
+#post-completo {
+  border: 2px solid var(--cor-borda);
+  padding: var(--espaco-base);
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.voltar-posts {
+  border: 1px solid var(--cor-borda);
+  padding: 0.3rem 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: var(--raio-borda);
+  background: none;
+  cursor: pointer;
+}
+
+#imagem-post-completo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+#post-completo h1 {
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  color: var(--cor-borda);
+  margin-bottom: 0.5rem;
+}
+
+#post-completo p {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.botao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--cor-primaria);
+  color: #fff;
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .caixa-titulo h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu-navegacao {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menu-navegacao a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bloco h2 {
+    font-size: 1.3rem;
+  }
+
+  .mencao-honrosa img {
+    max-width: 200px;
+  }
+
+  .cartao-post {
+    padding: 0.8rem;
+  }
+
+  .imagem-post {
+    max-width: 200px;
+    margin-right: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+    border-width: 2px;
+  }
+
+  .caixa-titulo h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitulo {
+    font-size: 0.8rem;
+  }
+
+  .botao-menu {
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-navegacao {
+    display: none;
+    flex-direction: column;
+    /* CORRIGIDO: Posicionamento do menu hamburguer logo abaixo do header */
+    position: absolute;
+    top: calc(100% + 0.5rem); /* Posiciona logo abaixo do header com um pequeno espaço */
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--raio-borda);
+    padding: 0.5rem;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  .menu-navegacao.menu-ativo {
+    display: flex;
+  }
+
+  .cartao-post {
+    flex-direction: column;
+  }
+
+  .imagem-post {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+ /* mountains're nice */

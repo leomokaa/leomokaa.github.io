@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Leo Moka</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&family=share+tech+mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="caixa-titulo">
+        <h1><span class="titulo-azul">Leo Moka</span> Blog</h1>
+        <blockquote class="subtitulo">
+          designer | dev em formação <br>
+          “𝚂𝚘𝚖𝚎𝚝𝚒𝚖𝚎𝚜, ideas are like good wine in that they just need 𝚝𝚒𝚖𝚎.”<br>
+          <cite class="autor-citacao">— Satoru Iwata</cite>
+        </blockquote>
+      </div>
+      <button class="botao-menu" aria-label="alternar menu">☰</button>
+      <nav class="menu-navegacao">
+        <a href="index.html">❤ Início</a>
+        <a href="blog.html" class="ativo">☱ Blog</a>
+      </nav>
+    </header>
+
+    <section class="posts-blog">
+      <h2>Postagens do Blog</h2>
+
+      <section class="container-posts" id="container-posts">
+        <article class="cartao-post" data-post-id="001" data-post-file="/posts/post-001.md">
+          <img src="/assets/images/brainigma.png" alt="Brain Lord e Terranigma" class="imagem-post">
+          <div class="conteudo-post">
+            <h3>Os Jogos de SNES Que Moldaram Minha Infância: Brain Lord e Terranigma</h3>
+            <p class="data-post">Postei em 08-05-2025</p>
+            <p>Revisitando os enigmas envolventes e o combate dinâmico de Brain Lord e Terranigma, dois RPGs de ação do SNES subestimados que marcaram minha infância.</p>
+            <div class="tags">
+              <span class="tag">Game Design</span>
+              <span class="tag">Retro Gaming</span>
+              <span class="tag">SNES</span>
+              <span class="numero-post">001</span>
+            </div>
+            <button class="leia-mais">Leia Mais →</button>
+          </div>
+        </article>
+
+        <article class="cartao-post" data-post-id="002" data-post-file="/posts/post-002.md">
+          <img src="/assets/images/post002.png" alt="Flow Launcher" class="imagem-post">
+          <div class="conteudo-post">
+            <h3>Flow Launcher: A Ferramenta que Turbinou Minha Produtividade no Windows</h3>
+            <p class="data-post">Postei em 10-05-2025</p>
+            <p>Como um buscador de arquivos organizou meu fluxo de trabalho e aumentou minha produtividade no windows.</p>
+            <div class="tags">
+              <span class="tag">Produtividade</span>
+              <span class="tag">Design</span>
+              <span class="numero-post">002</span>
+            </div>
+            <button class="leia-mais">Leia Mais →</button>
+          </div>
+        </article>
+
+          <article class="cartao-post" data-post-id="003" data-post-file="/posts/post-003.md">
+          <img src="/assets/images/post003.jpg" alt="Iwata Asks" class="imagem-post">
+          <div class="conteudo-post">
+            <h3>Por que o Iwata Asks é uma das maiores heranças criativas dos videogames</h3>
+            <p class="data-post">Postei 19-05-2025</p>
+            <p>Descobrindo por que uma série de entrevistas conduzidas por Satoru Iwata revela lições valiosas sobre desenvolvimento criativo, trabalho em equipe e liderança no universo dos jogos e além.</p>
+            <div class="tags">
+              <span class="tag">Produtividade</span>
+              <span class="tag">Game Design</span>
+              <span class="numero-post">003</span>
+            </div>
+            <button class="leia-mais">Leia Mais →</button>
+          </div>
+        </article>
+      </section>
+
+      <article id="post-completo" style="display: none;" role="region" aria-label="post completo">
+        <button class="voltar-posts">← Voltar para Postagens</button>
+        <img id="imagem-post-completo" src="" alt="" style="display: none;">
+        <div id="conteudo-post-completo" aria-live="polite"></div>
+      </article>
+    </section>
+
+    <footer>
+      <p>© 2025 Leomokaa</p>
+    </footer>
+  </main>
+
+  <button class="botao-topo" aria-label="voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+  <script src="/assets/scripts.js"></script>
+</body>
+</html>
